@@ -1,4 +1,4 @@
-package circle_and_square;
+package circle_and_square_2;
 //Description:
 //Даны, радиус круга и сторона квадрата. У какой фигуры площадь больше?
 

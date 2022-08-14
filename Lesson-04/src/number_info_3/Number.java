@@ -1,4 +1,4 @@
-package number_info;
+package number_info_3;
 
 //Description:
 //Дано двузначное число. Определить:

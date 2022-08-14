@@ -1,4 +1,4 @@
-package number_info;
+package number_info_3;
 //Description:
 //Пользователь вводит двузначное число. Найти:
 //а. число десятков в нем
