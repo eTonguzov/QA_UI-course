@@ -23,8 +23,9 @@ public class Fibonacci {
         }
         System.out.println(generation_fib(n));//Вызываем метод generation, в которой передаем число n, печатем результат(какойто масссив)
         ArrayList<BigInteger> arr_new = generation_fib(n);//Добавляем в новй массив arr_new значения из метода Generation
-        System.out.println("Ведите, порядковый номер элемента, который хотите получить: ");
-        while (true) {
+
+        System.out.println("Ведите, порядковый номер элемента(от 1 до ∞, который хотите получить: ");
+        while (true) {//цикл на ввод числа(получение n -го элемента
             try {
                 System.out.println(element(Integer.parseInt(bufferedReader.readLine()), arr_new));//передаем методу, ввод числа и массив Arr_new
                 break;
@@ -33,12 +34,12 @@ public class Fibonacci {
             }
         }
         System.out.println("Введите порядковый номер первых n чисел, сумму которых хотите получить: ");
-        BigInteger summa = BigInteger.ZERO;
-        while (true) {
+        BigInteger summa = BigInteger.ZERO;//0
+        while (true) {//проверка на ввод числа, (порядковый номер)
             try {
                 System.out.println(summa(Integer.parseInt(bufferedReader.readLine()), arr_new, summa));
                 break;
-            } catch (Exception e) {
+            } catch (Exception e) {//десь я обрабатываю все ошибки в одной куче
                 System.out.println("Это или не целое число, или вообще не число");
             }
         }
@@ -52,8 +53,8 @@ public class Fibonacci {
                 System.out.println("Это или не целое число, или вообще не число");
             }
         }
-        ArrayList <BigInteger> y = generation_fib(n);
-        porydok(z, y);
+        ArrayList <BigInteger> y = generation_fib(n);//присваиваем в переменную у сгенерированный массив,(из метода)
+        porydok(z, y);//передаем на вход z и наш новый массив
     }
     public static ArrayList<BigInteger> generation_fib(int n){
         ArrayList<BigInteger> arr = new ArrayList<>();//создаем неограниченный массив
@@ -68,11 +69,17 @@ public class Fibonacci {
     public static BigInteger element(int k, ArrayList<BigInteger> arr) {
         return arr.get(k - 1);
     }
-    public static BigInteger summa(int sum, ArrayList<BigInteger> arr, BigInteger summa) {
+    public static String summa(int sum, ArrayList<BigInteger> arr, BigInteger summa) {
         for (int i = 0; i < sum; i++) {
             summa = summa.add(arr.get(i));
         }
-        return summa;
+        BigInteger a = summa.mod(BigInteger.TWO);
+        a.intValue();
+        if( a.intValue()==0){
+            return  "Сумма первых " + sum + " элементов, пос-ти чисел Фибонначи равна: "  + summa + " и да, она четная";
+        }
+        else return "Сумма первых " + sum + " элементов, пос-ти чисел Фибонначи равна: "  + summa + " и да, она не четная";
+
     }
     public static ArrayList<BigInteger> porydok(int z, ArrayList<BigInteger> y) {
         for (int i = 0; i <= (z - 1); i++) {
@@ -81,6 +88,3 @@ public class Fibonacci {
         return y;
     }
 }
-
-
-

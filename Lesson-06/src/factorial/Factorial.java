@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 public class Factorial {
     public static void main(String[] args) {
-        BigInteger a = factorialClassic(7000);
+        BigInteger a = factorialClassic(70);
         System.out.println(a);
 
     }
