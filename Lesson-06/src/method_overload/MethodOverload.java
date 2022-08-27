@@ -10,19 +10,24 @@ import java.util.Scanner;
 public class MethodOverload {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int n = Integer.parseInt(br.readLine());
         int m = Integer.parseInt(br.readLine());
-        double n_double = Double.parseDouble(br.readLine());
-        double m_double = Double.parseDouble(br.readLine());
+       double n_double = Double.parseDouble(br.readLine());
+       double m_double = Double.parseDouble(br.readLine());
+
+
+
+
         overload(n,m);
         overload(n_double,m_double);
 
     }
-    public static int overload(){
-        return Math.pow(();
+    public static int overload(int n, int m){
+        return (int) Math.pow(n,m);
 
     }
-    public static double overload(double a){
-
+    public static double overload(double n_double, double m_double){
+        return Math.pow(n_double,m_double);
     }
 }
