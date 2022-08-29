@@ -6,13 +6,13 @@ public class Manager extends Employee{
 
     public Manager(String name, int age, String sex, int salary, int expirience){
         super( name,  age,  sex,  salary, expirience);//наследуем конструктор из класса Employee
-        this.bonus = generateBonus();
+        //this.bonus = generateBonus();
 
         }
-        private int generateBonus(){
-        if(salary>100){
-            this.bonus =
-        }
-        }
+        //private int generateBonus(){
+//        if(salary>100){
+//            this.bonus =
+      //  }
+      //  }
 
 }
