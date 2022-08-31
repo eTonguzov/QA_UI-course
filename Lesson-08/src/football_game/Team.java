@@ -6,7 +6,8 @@ public abstract class Team{
     String stadiumName;
 
 
-    public abstract void football_club_info();
-    public abstract String saySlogan();
+    public abstract void football_club_info();//информация о клубе
+    public abstract void saySlogan();//девиз комаеды
+
 
 }
