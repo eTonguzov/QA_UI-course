@@ -28,7 +28,7 @@ public class Futball_Club extends Team{
     }
 
     public void football_club_info(){
-        System.out.printf("Название кооманды = %s, Навзвание стадиона = %s, Бюджет команды = %d$, Рейтинг защиты = %d, Рейтинг атаки = %d", this.name, this.stadiumName, this.money, this.skill_deffence, this.skill_attack);
+        System.out.printf("Название кооманды = %s, Навзвание стадиона = %s, Бюджет команды = %d$, Рейтинг защиты = %d, Рейтинг атаки = %d\n", this.name, this.stadiumName, this.money, this.skill_deffence, this.skill_attack);
     }
 
 }
