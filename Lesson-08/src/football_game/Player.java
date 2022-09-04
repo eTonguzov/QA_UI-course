@@ -12,8 +12,17 @@ public class Player extends Person{
         this.salary = salary;
     }
 
+    public void setFutball_club(Futball_Club futball_club) {
+        this.futball_club = futball_club;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+
     public void info_player(){
-        System.out.printf("Имя игрока = %s, возраст = %d, позиция: %s, зарплата: %d", this.name, this.age, this.position);
+        System.out.printf("Имя игрока = %s, Команда: %s возраст = %d, позиция: %s, зарплата: %d", this.name, this.position, this.age, this.position);
     }
     public void setSalary(int salary){
         this.salary = salary;
