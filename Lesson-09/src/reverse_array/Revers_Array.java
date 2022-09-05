@@ -16,9 +16,7 @@ public class Revers_Array {
         System.out.println("Вы ввели массив: " + Arrays.toString(arr_new));
 
         int[] output_massive = revers_arr(arr_new);
-        System.out.println(Arrays.toString(output_massive));
-
-
+        System.out.println("Перевернутый массив выглядит так: " + Arrays.toString(output_massive));
         }
     public static int[] array_gen(int element, BufferedReader br) throws Exception {//метод создает массив с нумным колличесвом ячеек
         int [] array = new int[element];//создаем массив из ячекек, колличество ячеек равно element
@@ -28,14 +26,11 @@ public class Revers_Array {
         return array;
     }
     public static int[] revers_arr(int[] array){
-            int[] reverse_arr = new int[array.length];//
-
-            for(int y = 0; y<array.length; y++){
-                for (int i = array.length-1; i>=0; i--){
-                        reverse_arr[y] = array[i];
-                    }
-                }
-        return reverse_arr;
+            for(int i = 0; i < array.length/2; i++){//от 0 до (допустим 6 /2 = 3)
+                int temp = array[i];//временная переменная
+                array[i] = array[array.length-i-1];//[0]=array[6-0-1] = 5
+                array[array.length - i -1] = temp;
+            }
+        return array;
     }
-
 }
