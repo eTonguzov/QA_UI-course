@@ -4,6 +4,7 @@ package summ_positive_numbers;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class SummPositive {
     public static void main(String[] args) throws Exception {
@@ -16,7 +17,7 @@ public class SummPositive {
 
         System.out.println("Сумма положительных чисел равна: " + summ_positive(arr_new));
         System.out.println("Сумма чисел кратных 5 равна: " + summ_aliquot5(arr_new));
-        System.out.println("Последний элемент " + last_min_element(arr_new));
+        System.out.println("Последний минимальный элемент " + last_min_element(arr_new));
     }
     public static int[] array_gen(int element, BufferedReader br) throws Exception {//метод создает массив с нумным колличесвом ячеек
         int [] array = new int[element];//создаем массив из ячекек, колличество ячеек равно element

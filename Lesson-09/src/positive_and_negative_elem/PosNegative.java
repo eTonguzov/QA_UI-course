@@ -1,7 +1,9 @@
 package positive_and_negative_elem;
+//Дан массив, вывести сначала отрицательные числа, затем положительные
 
 import java.io.*;
 import java.util.*;
+
 
 public class PosNegative {
     public static void main(String[] args) throws Exception {
