@@ -1,11 +1,12 @@
 package football_game;
 
 public class Player extends Person{
-    String position;
+    private String position;
     private int salary;
     Futball_Club futball_club;//null
 
     public Player(String name, int age, String position, int salary){
+        super();//пустой конструктор
         this.name = name;
         this.age = age;
         this.position = position;
