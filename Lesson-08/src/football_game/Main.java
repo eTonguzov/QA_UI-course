@@ -7,9 +7,12 @@ public class Main {
         Futball_Club zenit = new Futball_Club("Zenit","We are Zenit", "Petrovsky Arena", 100000000, 75,59);
         Futball_Club lokomotiv = new Futball_Club("Lokomotive","We are Lokomotive", "Cherkizovo Arena", 35000000, 43,58);
 
-        Player ronaldo = new Player("Ronaldo", 33,"Forward",9000);
-        ronaldo.setFutball_club(zenit);
-        ronaldo.futball_club.football_club_info();
-        ronaldo.info_player();
+//        Sportsman ronaldo = new Sportsman("Ronaldo", 33,"Forward",9000);
+//        ronaldo.setFutball_club(zenit);
+//        ronaldo.futball_club.football_club_info();
+//        ronaldo.info_player();
+
+        BasketballPlayer egor = new BasketballPlayer("Egor",-29, 5, 3,4,"PG",65);
+        System.out.println(egor.getAge());
     }
 }

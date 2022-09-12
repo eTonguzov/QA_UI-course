@@ -1,31 +1,50 @@
 package football_game;
 
-public class Player extends Person{
-    private String position;
+public abstract class Sportsman{
     private int salary;
-    Futball_Club futball_club;//null
+    private String name;
+    private int age;
+    private int weight;
+    private int lenght;
 
-    public Player(String name, int age, String position, int salary){
-        super();//пустой конструктор
+
+    public Sportsman(String name, int age, int weight, int lenght, int salary){
+        this.name =name;
+        this.age =age;
+        this.weight =weight;
+        this.lenght =lenght;
+        this.salary =salary;
+    }
+    public abstract void info_player();
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
         this.name = name;
-        this.age = age;
-        this.position = position;
-        this.salary = salary;
     }
-
-    public void setFutball_club(Futball_Club futball_club) {
-        this.futball_club = futball_club;
-    }
-
     public int getSalary() {
         return salary;
     }
-
-
-    public void info_player(){
-        System.out.printf("Имя игрока = %s, Команда: %s возраст = %d, позиция: %s, зарплата: %d", this.name, this.position, this.age, this.position);
+    public int getAge() {
+        return age;
     }
-    public void setSalary(int salary){
+    public int getWeight() {
+        return weight;
+    }
+    public int getLenght() {
+        return lenght;
+    }
+    public void setSalary(int salary) {
         this.salary = salary;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+    public void setLenght(int lenght) {
+        this.lenght = lenght;
     }
 }
