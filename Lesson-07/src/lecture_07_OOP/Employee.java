@@ -28,7 +28,7 @@ public class Employee extends Person {
     public void setLaptop(Laptop laptop){//на вход принимаем объект класса laptop
         this.laptop=laptop;
         laptop.owner=this;//у ноутбука появляется владелец текущиц объект Employee
-        //Тони берет ноутбук и стает его владельцем, а у владельца появляется владелец
+        //Тони берет ноутбук и стает его владельцем, а у ноутбука появляется владелец
     }
     public void returnLaptop(Laptop laptop){
         this.laptop.owner = null;//обращаемся к сотруднику(this), обращаемся к его ноутбуку, обращаемся к владельцу и обнуляем его
