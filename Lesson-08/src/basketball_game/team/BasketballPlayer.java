@@ -41,9 +41,10 @@ public class BasketballPlayer extends Sportsman {
         return basketball_skill;
     }
 
-    public void setAll_skills(int all_skills) {
-        this.all_skills = (basketball_skill + getSport_skill())/2;
+    public int summAll_skills() {
+        return this.all_skills = (basketball_skill + getSport_skill())/2;
     }
+
 
     public int getAll_skills() {
         return all_skills;

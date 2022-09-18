@@ -5,10 +5,9 @@ public class Game {
     BasketballTeam anotherTeam;
 
     public String playGame(BasketballTeam team, BasketballTeam anotherTeam){
-        if(team.getTeamSkill() > anotherTeam.getTeamSkill()){
 
-        }
-
+        if(team.getTeamSkill() < anotherTeam.getTeamSkill()){
+           return  anotherTeam.getName() + " win";
+        }else return team.getName() + " win";
     }
-
-    }
+}

@@ -1,9 +1,11 @@
 package basketball_game.team;
 
+import java.util.ArrayList;
+
 public class BasketballTeam {
-    BasketballPlayer player;//У команды есть игровки
+    BasketballPlayer player;//У команды есть игроки
     private String name;
-    BasketballPlayer [] roster = new BasketballPlayer[12];
+    ArrayList<BasketballPlayer> roster = new ArrayList<>();
 
     public BasketballTeam(String name){
         this.name = name;
@@ -11,12 +13,7 @@ public class BasketballTeam {
     public void setPlayer(BasketballPlayer player){
         this.player = player;//этот игрок становится игроком команды
         player.team = this;//а у этой команды появляется игрок
-        for(int i = 0; i<=12; i++){
-            if(roster[i]!=null){
-                roster[i] = player;
-                break;
-            }
-        }
+        roster.add(player);
     }
 
     public void setName(String name) {
@@ -26,16 +23,18 @@ public class BasketballTeam {
     public String getName() {
         return name;
     }
-    public int getTeamSkill(BasketballPlayer [] roster){
+
+    public ArrayList<BasketballPlayer> getRoster() {
+        return roster;
+    }
+
+    public int getTeamSkill(){
         int count = 0;
         int count_player = 0;
         for(BasketballPlayer pl : roster){
-            if(pl != null){
-                count = count + player.getAll_skills();
+                count = count + player.summAll_skills();
                 count_player++;
-            }
         }
         return count/count_player;
     }
-
 }
