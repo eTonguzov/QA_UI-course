@@ -32,7 +32,7 @@ public class BasketballTeam {
         int count = 0;
         int count_player = 0;
         for(BasketballPlayer pl : roster){
-                count = count + player.summAll_skills();
+                count = count + pl.getSummAll_skills();
                 count_player++;
         }
         return count/count_player;
