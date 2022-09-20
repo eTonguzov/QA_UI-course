@@ -7,8 +7,8 @@ public class BasketballPlayer extends Sportsman {
     public BasketballTeam team;
     private int all_skills;
 
-    public BasketballPlayer(int sport_skill, int basketball_skill) {
-        super(sport_skill);//используем конструктор из родительского абстрактного класса
+    public BasketballPlayer(String name, int sport_skill, int basketball_skill) {
+        super(name, sport_skill);//используем конструктор из родительского абстрактного класса
         this.basketball_skill = basketball_skill;
     }
 
@@ -49,6 +49,10 @@ public class BasketballPlayer extends Sportsman {
 
     public int getAll_skills() {
         return all_skills;
+    }
+    @Override
+    public String toString(){
+        return super.getName();
     }
 }
 

@@ -5,8 +5,9 @@ public abstract class Sportsman {
     private String name;
 
 
-    public Sportsman(int sport_skill) {
+    public Sportsman(String name, int sport_skill) {
         this.sport_skill = sport_skill;
+        this.name = name;
     }
 
     public void setSport_skill(int sport_skill) {
