@@ -16,13 +16,20 @@ public class Main {
         BasketballPlayer kobe = new BasketballPlayer("Kobe Bryant",99, 99);
         BasketballPlayer dirk_nowitzki = new BasketballPlayer("Dirk Novitzki",50, 99);
         BasketballPlayer luka_doncic = new BasketballPlayer("Luka Doncic",99, 99);
+        BasketballPlayer luka_doncic2 = new BasketballPlayer("Luka Doncic2",99, 99);
+        BasketballPlayer luka_doncic3 = new BasketballPlayer("Luka Doncic3",99, 99);
+        //BasketballPlayer westbrook = new BasketballPlayer("Westbrook", 65,78);
         /*Добавляем игроков в команды*/
         lakers.setPlayer(lebron);
         lakers.setPlayer(kobe);
         dallas.setPlayer(dirk_nowitzki);
         dallas.setPlayer(luka_doncic);
+        dallas.setPlayer(luka_doncic2);
+        dallas.setPlayer(luka_doncic3);
+
+        //lakers.setPlayer(westbrook);
         /*Рейтинг игрока(сумма по всем скиллам)*/
-        System.out.println(lebron.getSummAll_skills());
+        //System.out.println(lebron.getSummAll_skills());
         /*Ираем первую игру*/
         Game play_game= new Game();
         System.out.println(play_game.playGame(lakers, dallas));//У кого больше рейтинг (средний по игрокам,тот и победит)
