@@ -27,8 +27,9 @@
 * ### Lesson-36 _(Основы языка SQL: SELECT, UPDATE, INSERT)_
   [SELECT, UPDATE, INSERT](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-36/SELECT%2C%20UPDATE%2C%20INSERT.sql)
 
-* ### Lesson-37 _(Основы языка SQL: JOIN, GROUP BY)_
+* ### Lesson-37 _(Основы языка SQL: SELECT, UPDATE, INSERT)_
 
-  [JOIN, GROUP BY](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-37/JOIN%2C%20GROUP%20BY.sql)
+  [SELECT, UPDATE, INSERT](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-37/SELECT%2C%20UPDATE%2C%20INSERT2.sql)
 
-
+* ### Lesson-38 _(Основы языка SQL: JOIN, GROUP BY)_
+  [JOIN, GROUP BY](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-38/JOIN%2C%20GROUP%20BY.sql)
