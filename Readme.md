@@ -24,5 +24,11 @@
     [Unit Testing(Example from lesson)](https://github.com/eTonguzov/QA_UI-course/tree/main/Lesson-11/src/jUnit_examples)
 
     [My Example Junit 5](https://github.com/eTonguzov/QA_UI-course/tree/main/Lesson-11/src/my_Junit_test)
+* ### Lesson-36 _(Основы языка SQL: SELECT, UPDATE, INSERT)_
+  [SELECT, UPDATE, INSERT](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-36/SQL.sql)
+
+* ### Lesson-37 _(Основы языка SQL: JOIN, GROUP BY)_
+
+  [JOIN, GROUP BY](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-37/SQL2.sql)
 
 
