@@ -34,5 +34,7 @@
 * ### Lesson-38 _(Основы языка SQL: JOIN, GROUP BY)_
   [JOIN, GROUP BY](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-38/JOIN%2C%20GROUP%20BY.sql)
 
-* ### Lesson-39 _(Основы языка SQL: JOIN, GROUP BY)_
+* ### Lesson-39 _(Основы языка SQL: JOIN, GROUP BY + Homework SQL)_
   [JOIN, GROUP BY](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-39/JOIN%2C%20GROUP%20BY2.sql)
+  
+  [Homework SQL](https://github.com/eTonguzov/QA_UI-course/blob/main/Lesson-39/Homework.sql)
